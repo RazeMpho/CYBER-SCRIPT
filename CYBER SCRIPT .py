@@ -23,7 +23,7 @@ def monitor_file(file_path, interval=5):
         new_hash = calculate_hash(file_path)
 
         if new_hash != old_hash:
-            print("⚠️ ALERT: FILE HAS BEEN MODIFIED!")
+            print("ALERT: FILE HAS BEEN MODIFIED!")
             print(f"Old Hash: {old_hash}")
             print(f"New Hash: {new_hash}")
             old_hash = new_hash
